@@ -5,34 +5,34 @@
 
 :root {
   /* ── Colors ── */
-  --color-background:        #ffffff;
-  --color-foreground:        #09090b;
-  --color-muted-foreground:  #71717a;
-  --color-muted-surface:     #f4f4f5;
-  --color-surface-subtle:    #fafafa;
-  --color-primary-action:    #18181b;
-  --color-border:            #e4e4e7;
+  --color-background: #ffffff;
+  --color-foreground: #09090b;
+  --color-muted-foreground: #71717a;
+  --color-muted-surface: #f4f4f5;
+  --color-surface-subtle: #fafafa;
+  --color-primary-action: #18181b;
+  --color-border: #e4e4e7;
 
   /* ── Spacing (4px base grid) ── */
-  --sp-0-5:  2px;
-  --sp-1:    4px;
-  --sp-1-5:  6px;
-  --sp-2:    8px;
-  --sp-2-5:  10px;
-  --sp-3:    12px;
-  --sp-4:    16px;
-  --sp-5:    20px;
-  --sp-6:    24px;
-  --sp-8:    32px;
-  --sp-12:   48px;
-  --sp-16:   64px;
-  --sp-20:   80px;
-  --sp-24:   96px;
+  --sp-0-5: 2px;
+  --sp-1: 4px;
+  --sp-1-5: 6px;
+  --sp-2: 8px;
+  --sp-2-5: 10px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-8: 32px;
+  --sp-12: 48px;
+  --sp-16: 64px;
+  --sp-20: 80px;
+  --sp-24: 96px;
 
   /* ── Border Radius ── */
-  --radius-xs:   2px;
-  --radius-sm:   6px;
-  --radius-md:   8px;
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
   --radius-full: 9999px;
 
   /* ── Typography ── */
@@ -40,30 +40,30 @@
   --font-mono: "Geist Mono", "Fira Code", ui-monospace, monospace;
 
   /* Font sizes */
-  --fs-hero:    72px;
-  --fs-xl:      48px;
-  --fs-lg:      36px;
-  --fs-card:    20px;
-  --fs-sub:     18px;
-  --fs-body:    16px;
-  --fs-sm:      14px;
-  --fs-label:   12px;
-  --fs-micro:   11px;
+  --fs-hero: 72px;
+  --fs-xl: 48px;
+  --fs-lg: 36px;
+  --fs-card: 20px;
+  --fs-sub: 18px;
+  --fs-body: 16px;
+  --fs-sm: 14px;
+  --fs-label: 12px;
+  --fs-micro: 11px;
 
   /* Line heights */
-  --lh-hero:  72px;
-  --lh-xl:    48px;
-  --lh-lg:    40px;
-  --lh-card:  28px;
-  --lh-body:  24px;
-  --lh-sm:    20px;
+  --lh-hero: 72px;
+  --lh-xl: 48px;
+  --lh-lg: 40px;
+  --lh-card: 28px;
+  --lh-body: 24px;
+  --lh-sm: 20px;
   --lh-label: 16px;
   --lh-micro: 20px;
 
   /* Letter spacing */
   --ls-hero: -1.8px;
-  --ls-lg:   -0.9px;
-  --ls-sub:  -0.45px;
+  --ls-lg: -0.9px;
+  --ls-sub: -0.45px;
 
   /* ── Transitions ── */
   --transition-fast: 150ms ease;
@@ -75,7 +75,7 @@
   --shadow-card: 0 0 0 1px var(--color-border);
 
   /* ── Layout ── */
-  --max-w-content: 1100px;
-  --nav-height:    64px;
-  --section-gap:   var(--sp-24);
+  --max-w-content: 1500px;
+  --nav-height: 64px;
+  --section-gap: var(--sp-24);
 }
