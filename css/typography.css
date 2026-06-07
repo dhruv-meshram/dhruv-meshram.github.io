@@ -1,0 +1,117 @@
+/* ============================================================
+   TYPOGRAPHY UTILITY CLASSES
+   Source: bjorn-melin-DESIGN.md type scale
+   ============================================================ */
+
+/* ── Hero H1 ── */
+.type-hero {
+  font-family: var(--font-sans);
+  font-size: var(--fs-hero);
+  font-weight: 700;
+  line-height: var(--lh-hero);
+  letter-spacing: var(--ls-hero);
+  color: var(--color-foreground);
+}
+
+/* ── Section Heading XL ── */
+.type-section-xl {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xl);
+  font-weight: 700;
+  line-height: var(--lh-xl);
+  letter-spacing: normal;
+  color: var(--color-foreground);
+}
+
+/* ── Section Heading LG ── */
+.type-section-lg {
+  font-family: var(--font-sans);
+  font-size: var(--fs-lg);
+  font-weight: 700;
+  line-height: var(--lh-lg);
+  letter-spacing: var(--ls-lg);
+  color: var(--color-foreground);
+}
+
+/* ── Card Heading ── */
+.type-card-heading {
+  font-family: var(--font-sans);
+  font-size: var(--fs-card);
+  font-weight: 600;
+  line-height: var(--lh-card);
+  letter-spacing: normal;
+  color: var(--color-foreground);
+}
+
+/* ── Subheading ── */
+.type-subheading {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sub);
+  font-weight: 600;
+  line-height: var(--lh-card);
+  letter-spacing: var(--ls-sub);
+  color: var(--color-foreground);
+}
+
+/* ── Body ── */
+.type-body {
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  font-weight: 400;
+  line-height: var(--lh-body);
+  letter-spacing: normal;
+  color: var(--color-foreground);
+}
+
+/* ── Body Medium ── */
+.type-body-medium {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 500;
+  line-height: var(--lh-sm);
+  letter-spacing: normal;
+}
+
+/* ── Body Small ── */
+.type-body-small {
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  line-height: var(--lh-sm);
+  letter-spacing: normal;
+}
+
+/* ── Label ── */
+.type-label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: var(--lh-label);
+  letter-spacing: normal;
+}
+
+/* ── Caption ── */
+.type-caption {
+  font-family: var(--font-sans);
+  font-size: var(--fs-label);
+  font-weight: 400;
+  line-height: var(--lh-label);
+  letter-spacing: normal;
+  color: var(--color-muted-foreground);
+}
+
+/* ── Micro Label ── */
+.type-micro {
+  font-family: var(--font-sans);
+  font-size: var(--fs-micro);
+  font-weight: 500;
+  line-height: var(--lh-micro);
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+/* ── Color Modifiers ── */
+.text-muted    { color: var(--color-muted-foreground); }
+.text-primary  { color: var(--color-foreground); }
+.text-action   { color: var(--color-primary-action); }

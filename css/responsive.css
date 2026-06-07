@@ -1,0 +1,87 @@
+/* ============================================================
+   RESPONSIVE — Mobile-first media queries
+   ============================================================ */
+
+/* ── Tablet: 640px ── */
+@media (max-width: 1024px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__image-wrap {
+    display: none;
+  }
+
+  .achievements__list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-card {
+    grid-template-columns: 1fr;
+  }
+
+  .edu-card__grad {
+    text-align: left;
+  }
+}
+
+/* ── Mobile: 640px ── */
+@media (max-width: 640px) {
+  :root {
+    --nav-height: 56px;
+    --section-gap: 64px;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .hero__name {
+    font-size: clamp(36px, 9vw, 56px);
+  }
+
+  .container {
+    padding-inline: var(--sp-5);
+  }
+
+  .about__stats {
+    gap: var(--sp-6);
+  }
+
+  .research__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .activities__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-2);
+  }
+
+  .section-header__title {
+    font-size: 28px;
+  }
+}
+
+/* ── Large desktop: 1200px ── */
+@media (min-width: 1200px) {
+  .container {
+    padding-inline: var(--sp-8);
+  }
+}
