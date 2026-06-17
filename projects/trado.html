@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Detailed overview of Trado peer-to-peer campus marketplace — featuring Socket.io chat negotiations, Karma trust engines, and PWA capabilities." />
+  <title>Trado — P2P Marketplace — Project Details</title>
+
+  <!-- Fonts: Geist via CDN, fallback Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/geist-sans" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo">Dhruv Meshram</a>
+
+      <ul class="navbar__links" role="list">
+        <li><a class="navbar__link" href="../index.html#about">About</a></li>
+        <li><a class="navbar__link" href="../index.html#projects">Projects</a></li>
+        <li><a class="navbar__link" href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="project-detail">
+    <div class="container">
+      
+      <!-- Back Link -->
+      <a href="../index.html#projects" class="project-detail__back" aria-label="Back to home page projects section">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <!-- Header Section -->
+      <header class="project-detail__header reveal">
+        <span class="project-detail__eyebrow">Full-Stack Web &amp; Real-Time Systems</span>
+        <h1 class="project-detail__title">Trado — P2P Marketplace</h1>
+        <p class="project-detail__summary">
+          A hyper-local peer-to-peer campus marketplace supporting real-time transaction negotiations, a mathematical trust score engine, and secure verification protocols.
+        </p>
+      </header>
+
+      <!-- Meta Grid -->
+      <div class="project-detail__meta-grid reveal reveal-delay-1">
+
+        <div>
+          <p class="project-detail__meta-item-title">Timeline</p>
+          <p class="project-detail__meta-item-value">Fall 2025</p>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Category</p>
+          <p class="project-detail__meta-item-value">Full-Stack Web App</p>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Codebase</p>
+          <a href="https://github.com/vedantb7/trado" target="_blank" rel="noopener noreferrer" class="project-detail__meta-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- Details Content Grid -->
+      <div class="project-detail__content-grid">
+        
+        <!-- Left Side: Main Writeup -->
+        <div class="reveal">
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Overview &amp; Problem</h2>
+            <p class="project-detail__text">
+              P2P marketplaces on university campuses are often fragmented, relying on generic social media groups. These forums are plagued by spam listings, lack of trust between strangers, and inefficient coordination. Buyers and sellers frequently face safety concerns and high cancellation rates.
+            </p>
+            <p class="project-detail__text">
+              Trado addresses these inefficiencies by consolidating listings in a secure, campus-restricted web application. Features such as university email validation, mathematical trust metrics, and an integrated real-time chat with custom price proposals simplify transaction coordination.
+            </p>
+          </section>
+
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Key Architectural Features</h2>
+            <p class="project-detail__text">
+              Trado's operation relies on three primary pillars of technology:
+            </p>
+            <div class="project-detail__bullets">
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Socket.io Negotiation:</strong> Users do not just send text; they propose binding prices. The backend handles message payloads dynamically, rendering structured "Offer" cards directly inside the conversation stream.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Karma Trust Engine:</strong> Every profile features a rating generated by an algorithm. The score evaluates response speed, successful transaction count, and positive reviews, helping users gauge reliability.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Handshake Protocol:</strong> To complete a transaction securely, the seller receives a unique PIN code. Upon physical inspection of the item, the buyer inputs the PIN on their phone to finalize the sale and update profile histories.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Challenges &amp; Learnings</h2>
+            <p class="project-detail__text">
+              A major engineering challenge was ensuring a smooth chat experience under spotty campus Wi-Fi. If connection dropped during a negotiation, messages could easily be lost. We resolved this by building a client-side database using IndexedDB.
+            </p>
+            <p class="project-detail__text">
+              Unsent messages are queued locally and marked with a pending state. A background synchronizer detects network restoration, flushing the local queue to the MongoDB server. This guarantees that negotiation histories remain accurate and complete, even with connection interruptions.
+            </p>
+          </section>
+        </div>
+
+        <!-- Right Side: Sidebar Tech Stack & Specs -->
+        <div class="reveal reveal-delay-2">
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Tech Stack Detail</h2>
+            <div class="project-detail__tech-list">
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/nextdotjs'); -webkit-mask-image: url('https://cdn.simpleicons.org/nextdotjs');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/typescript'); -webkit-mask-image: url('https://cdn.simpleicons.org/typescript');"></span>
+                  Next.js 14 &amp; TypeScript
+                </p>
+                <p class="project-detail__tech-desc">Provides a type-safe, component-driven framework supporting fast server-side rendering and static page optimization.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/socketdotio'); -webkit-mask-image: url('https://cdn.simpleicons.org/socketdotio');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/nodedotjs'); -webkit-mask-image: url('https://cdn.simpleicons.org/nodedotjs');"></span>
+                  Socket.io &amp; Node
+                </p>
+                <p class="project-detail__tech-desc">Enables persistent bidirectional event channels between buyer and seller sockets for instant message updates.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/mongodb'); -webkit-mask-image: url('https://cdn.simpleicons.org/mongodb');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/prisma'); -webkit-mask-image: url('https://cdn.simpleicons.org/prisma');"></span>
+                  MongoDB &amp; Prisma
+                </p>
+                <p class="project-detail__tech-desc">Flexible document schema for storing complex conversation histories, item states, and index optimization for geocoded queries.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/auth0'); -webkit-mask-image: url('https://cdn.simpleicons.org/auth0');"></span>
+                  NextAuth
+                </p>
+                <p class="project-detail__tech-desc">Handles user sessions and restricts registration domains strictly to verified educational institute emails.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="contact-section">
+    <div class="container">
+      <div class="footer__bottom" style="margin-top: 0; border-top: none;">
+        <p class="footer__copy">&copy; 2026 Dhruv Meshram. All rights reserved.</p>
+        <p class="footer__copy">Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/animations.js"></script>
+</body>
+
+</html>

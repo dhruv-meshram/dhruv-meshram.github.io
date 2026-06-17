@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Detailed overview of Freshwash DBMS — a custom C++ B+ Tree sharded database engine with ACID-compliant WAL transactions and React dashboard." />
+  <title>Freshwash DBMS — Project Details</title>
+
+  <!-- Fonts: Geist via CDN, fallback Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/geist-sans" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo">Dhruv Meshram</a>
+
+      <ul class="navbar__links" role="list">
+        <li><a class="navbar__link" href="../index.html#about">About</a></li>
+        <li><a class="navbar__link" href="../index.html#projects">Projects</a></li>
+        <li><a class="navbar__link" href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="project-detail">
+    <div class="container">
+      
+      <!-- Back Link -->
+      <a href="../index.html#projects" class="project-detail__back" aria-label="Back to home page projects section">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <!-- Header Section -->
+      <header class="project-detail__header reveal">
+        <span class="project-detail__eyebrow">Database Systems &amp; C++</span>
+        <h1 class="project-detail__title">Freshwash DBMS</h1>
+        <p class="project-detail__summary">
+          A high-performance sharded database engine featuring a custom B+ Tree storage engine, ACID-compliant write-ahead logging (WAL), horizontal sharding middleware, and a React management dashboard.
+        </p>
+      </header>
+
+      <!-- Meta Grid -->
+      <div class="project-detail__meta-grid reveal reveal-delay-1">
+
+        <div>
+          <p class="project-detail__meta-item-title">Timeline</p>
+          <p class="project-detail__meta-item-value">Fall 2025</p>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Category</p>
+          <p class="project-detail__meta-item-value">Database Management Systems</p>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Codebase</p>
+          <a href="https://github.com/vedantb7/Database-Freshwash" target="_blank" rel="noopener noreferrer" class="project-detail__meta-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+
+
+
+      <!-- Details Content Grid -->
+      <div class="project-detail__content-grid">
+        
+        <!-- Left Side: Main Writeup -->
+        <div class="reveal">
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Overview &amp; Problem</h2>
+            <p class="project-detail__text">
+              Traditional relational database management systems introduce significant overhead for simple read/write operations due to comprehensive SQL parsers, query planners, and heavy execution engines. Freshwash DBMS was designed as a lightweight, specialized alternative to achieve maximal insert and query speeds for high-volume transactions while preserving the safety guarantees of traditional database engines.
+            </p>
+            <p class="project-detail__text">
+              The project builds a complete database system from scratch. By writing a custom B+ Tree storage engine in C++ and distributing data transparently across shard nodes using a Python routing middleware, we created an engine capable of handling hundreds of thousands of transactions per second with horizontal scalability.
+            </p>
+          </section>
+
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">System Architecture</h2>
+            <p class="project-detail__text">
+              The database architecture is split into three core layers: the C++ Storage Nodes, the Python Sharding Middleware, and the React Admin Portal.
+            </p>
+            <div class="project-detail__bullets">
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>C++ B+ Tree Engine:</strong> An on-disk index manager with fixed-size pages. Nodes are split and merged dynamically to ensure O(log N) index lookups. Pointer structures are serialized directly to file offsets using a custom page buffer pool.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>ACID &amp; WAL:</strong> Write-Ahead Logging writes transaction payloads to disk sequentially before updating the B+ tree. In case of unexpected server crashes, a recovery parser replays the WAL to ensure transaction durability (Redo) and rolls back partial writes (Undo).
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Sharding Middleware:</strong> Employs consistent hashing algorithms in a Python network wrapper to distribute primary keys across distinct physical C++ storage nodes, minimizing re-sharding overhead.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Challenges &amp; Key Learnings</h2>
+            <p class="project-detail__text">
+              The primary technical challenge lay in memory serialization. Because B+ Trees are traditionally pointer-heavy, translating native C++ pointers to stable disk-based representations required building a virtual offset architecture. Every page node refers to children by virtual Page IDs rather than memory addresses, allowing the Buffer Manager to swap pages in and out of memory seamlessly.
+            </p>
+            <p class="project-detail__text">
+              Additionally, load testing using Locust highlighted potential race conditions during high-concurrency inserts. This led to the implementation of fine-grained latching (latch crabbing) on B+ Tree nodes, which allows multiple threads to traverse the index tree concurrently without compromising structure integrity.
+            </p>
+          </section>
+        </div>
+
+        <!-- Right Side: Sidebar Tech Stack & Specs -->
+        <div class="reveal reveal-delay-2">
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Tech Stack Detail</h2>
+            <div class="project-detail__tech-list">
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/cplusplus'); -webkit-mask-image: url('https://cdn.simpleicons.org/cplusplus');"></span>
+                  C++
+                </p>
+                <p class="project-detail__tech-desc">Core storage engine, custom page layout serialization, and disk-level page caching manager.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/python'); -webkit-mask-image: url('https://cdn.simpleicons.org/python');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/flask'); -webkit-mask-image: url('https://cdn.simpleicons.org/flask');"></span>
+                  Python &amp; Flask
+                </p>
+                <p class="project-detail__tech-desc">Routing middleware layer implementing consistent hashing, scatter-gather queries, and JSON API.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/react'); -webkit-mask-image: url('https://cdn.simpleicons.org/react');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/jsonwebtokens'); -webkit-mask-image: url('https://cdn.simpleicons.org/jsonwebtokens');"></span>
+                  React &amp; JWT
+                </p>
+                <p class="project-detail__tech-desc">Administrative dashboard presenting live query performance charts, transaction status, and node health.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/locust'); -webkit-mask-image: url('https://cdn.simpleicons.org/locust');"></span>
+                  Locust
+                </p>
+                <p class="project-detail__tech-desc">Distributed load-testing framework used to simulate high concurrency up to 50k active database clients.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="contact-section">
+    <div class="container">
+      <div class="footer__bottom" style="margin-top: 0; border-top: none;">
+        <p class="footer__copy">&copy; 2026 Dhruv Meshram. All rights reserved.</p>
+        <p class="footer__copy">Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/animations.js"></script>
+</body>
+
+</html>
