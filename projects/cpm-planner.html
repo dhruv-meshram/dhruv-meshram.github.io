@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Detailed overview of CPM Planner — a high-performance full-stack project management tool featuring a custom C++ scheduling engine, Next.js 15 interactive frontend, and IPC integration layer." />
+  <title>CPM Planner — Project Details</title>
+
+  <!-- Fonts: Geist via CDN, fallback Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/geist-sans" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/tokens.css" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/typography.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo">Dhruv Meshram</a>
+
+      <ul class="navbar__links" role="list">
+        <li><a class="navbar__link" href="../index.html#about">About</a></li>
+        <li><a class="navbar__link" href="../index.html#projects">Projects</a></li>
+        <li><a class="navbar__link" href="../index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="project-detail">
+    <div class="container">
+      
+      <!-- Back Link -->
+      <a href="../index.html#projects" class="project-detail__back" aria-label="Back to home page projects section">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        Back to Portfolio
+      </a>
+
+      <!-- Header Section -->
+      <header class="project-detail__header reveal">
+        <span class="project-detail__eyebrow">Project Management &amp; Mathematical Optimization</span>
+        <h1 class="project-detail__title">CPM Planner</h1>
+        <p class="project-detail__summary">
+          A high-performance full-stack project management tool featuring a custom C++ scheduling engine, interactive dependency graphs via React Flow, and a robust PostgreSQL/Prisma backend.
+        </p>
+      </header>
+
+      <!-- Meta Grid -->
+      <div class="project-detail__meta-grid reveal reveal-delay-1">
+        <div>
+          <p class="project-detail__meta-item-title">Timeline</p>
+          <p class="project-detail__meta-item-value">Summer 2026</p>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Category</p>
+          <p class="project-detail__meta-item-value">Full-Stack Systems / Optimization</p>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Codebase</p>
+          <a href="https://github.com/dhruv-meshram/cpm.git" target="_blank" rel="noopener noreferrer" class="project-detail__meta-link">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+            </svg>
+            GitHub Repository
+          </a>
+        </div>
+        <div>
+          <p class="project-detail__meta-item-title">Deployment</p>
+          <a href="https://cpm-app-w0e3.onrender.com" target="_blank" rel="noopener noreferrer" class="project-detail__meta-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Live Application
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Details Content Grid -->
+      <div class="project-detail__content-grid">
+        
+        <!-- Left Side: Main Writeup -->
+        <div class="reveal">
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Overview &amp; Problem</h2>
+            <p class="project-detail__text">
+              Traditional project management software often abstracts away the mathematical complexity of task dependencies, leading to inefficient scheduling for large-scale projects. CPM Planner bridges this gap by integrating a dedicated C++ engine that performs rigorous Critical Path Method (CPM) calculations.
+            </p>
+            <p class="project-detail__text">
+              This ensures project timelines are mathematically optimized, identifying exactly which tasks are "critical" to the project's finish date and where "float" (slack time) can be utilized to manage resources effectively.
+            </p>
+          </section>
+
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">System Architecture</h2>
+            <p class="project-detail__text">
+              The project is built as a modular, three-tier system designed for performance and scalability:
+            </p>
+            <div class="project-detail__bullets">
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>C++ Mathematical Engine:</strong> A standalone, performance-optimized backend implementing Kahn’s algorithm for topological sorting. It performs forward and backward pass calculations to determine earliest/latest start times and critical paths for projects with thousands of tasks in milliseconds.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Interactive Workspace:</strong> A modern Next.js 15+ frontend providing real-time Gantt charts, interactive Directed Acyclic Graphs (DAG) via React Flow, and high-performance Kanban boards for task management.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Persistence Layer:</strong> A robust PostgreSQL database managed by Prisma ORM, handling multi-tenant workspaces, task versioning, and secure activity audit trails.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Integration Layer:</strong> A specialized Node.js service that serializes complex project graphs into JSON and invokes the native C++ engine via high-speed IPC (Inter-Process Communication), handling buffers up to 50MB for massive projects.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Challenges &amp; Key Learnings</h2>
+            <p class="project-detail__text">
+              Engineering a full-stack mathematical optimization workspace presented several key architectural hurdles:
+            </p>
+            <div class="project-detail__bullets">
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>High-Volume Graph Processing:</strong> Optimizing the C++ engine for O(V+E) time complexity was essential for maintaining a responsive UI. The integration layer was designed to handle high-volume JSON serialization without blocking the main event loop.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Cycle Detection &amp; Validation:</strong> To ensure mathematical validity, the system implements strict DAG (Directed Acyclic Graph) validation at both the database and engine levels, preventing circular dependencies that would cause deadlocks in scheduling.
+                </div>
+              </div>
+              <div class="project-detail__bullet">
+                <div>
+                  <strong>Real-Time Visualization:</strong> Synchronizing the complex graph layout state (using Dagre algorithms) with React Flow components required advanced state management (Zustand) to keep the UI fluid even when managing deeply nested dependencies.
+                </div>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <!-- Right Side: Sidebar Tech Stack & Specs -->
+        <div class="reveal reveal-delay-2">
+          <section class="project-detail__section">
+            <h2 class="project-detail__section-title">Tech Stack Detail</h2>
+            <div class="project-detail__tech-list">
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/cplusplus'); -webkit-mask-image: url('https://cdn.simpleicons.org/cplusplus');"></span>
+                  C++ (C++17)
+                </p>
+                <p class="project-detail__tech-desc">Core scheduling logic, topological sorting, forward/backward passes, and performance-critical mathematical calculations.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/nextdotjs'); -webkit-mask-image: url('https://cdn.simpleicons.org/nextdotjs');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/typescript'); -webkit-mask-image: url('https://cdn.simpleicons.org/typescript');"></span>
+                  Next.js &amp; TypeScript
+                </p>
+                <p class="project-detail__tech-desc">Modern App Router architecture with full-stack type safety from database schemas to client-side components.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/postgresql'); -webkit-mask-image: url('https://cdn.simpleicons.org/postgresql');"></span>
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/prisma'); -webkit-mask-image: url('https://cdn.simpleicons.org/prisma');"></span>
+                  PostgreSQL &amp; Prisma
+                </p>
+                <p class="project-detail__tech-desc">Relational schema design with custom check constraints, task version tracking, and active audit logging.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/react'); -webkit-mask-image: url('https://cdn.simpleicons.org/react');"></span>
+                  React Flow &amp; Dagre
+                </p>
+                <p class="project-detail__tech-desc">Specialized canvas rendering engine used to build interactive node graphs with automated DAG layouts.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/tailwindcss'); -webkit-mask-image: url('https://cdn.simpleicons.org/tailwindcss');"></span>
+                  TailwindCSS &amp; Shadcn/ui
+                </p>
+                <p class="project-detail__tech-desc">Sleek, accessible, responsive design design system following modern dark-mode aesthetic standards.</p>
+              </div>
+              <div class="project-detail__tech-item">
+                <p class="project-detail__tech-name">
+                  <span class="project-detail__tech-icon" style="mask-image: url('https://cdn.simpleicons.org/reactquery'); -webkit-mask-image: url('https://cdn.simpleicons.org/reactquery');"></span>
+                  TanStack Query
+                </p>
+                <p class="project-detail__tech-desc">Robust client-side caching and synchronization layers for real-time UI data updates without reload lag.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="contact-section">
+    <div class="container">
+      <div class="footer__bottom" style="margin-top: 0; border-top: none;">
+        <p class="footer__copy">&copy; 2026 Dhruv Meshram. All rights reserved.</p>
+        <p class="footer__copy">Built with HTML, CSS &amp; JavaScript</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/animations.js"></script>
+</body>
+
+</html>
